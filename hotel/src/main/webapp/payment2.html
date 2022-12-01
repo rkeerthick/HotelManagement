@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Payment</title>
+</head>
+
+<style>
+	table{
+		position: absolute;
+		top: 150px;
+		left: 40%;
+	}
+</style>
+
+<body>
+	<form action="payment2Servlet" method="get">
+		<table>
+			<tr>
+				<th colspan="2" style="padding-bottom: 20px; font-size: 20px">Presidential Payment Process</th>
+			</tr>
+			<tr>
+				<td>Name : </td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td>Phone Number : </td>
+				<td><input type="text" name="phNo"></td>
+			</tr>
+			<tr>
+				<td>Email : </td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td>Payment Mode : </td>
+				<td>
+					<input type="radio" name="pay">UPI<br>
+					<input type="radio" name="pay">Credit Card<br>
+					<input type="radio" name="pay">Debit Card
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
